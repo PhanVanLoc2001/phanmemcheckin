@@ -1057,5 +1057,246 @@ li.slick-active {
 .footer-bottom {
     background: #37517e;
 }
-
+.bx-wrapper{
+    box-shadow: none !important;
+    border: none !important;
+    background: none !important;
+}
 /*# sourceMappingURL=style.css.map */
+.card-marketing {
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 10px 0px rgba(255, 146, 1, 0.10);
+}
+.card-marketing .img-card img {
+    border-radius: 12px;
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.card-content .content-top a {
+    color: #424857;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 150%;
+}
+.more {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+section.page-margin {
+    padding-bottom: 0;
+}
+figure.image.align-center {
+    text-align: center;
+}
+section.blog-page{
+    padding-top: 30px;
+}
+.hotline-phone-ring-wrap {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999999;
+}
+
+.hotline-phone-ring {
+    position: relative;
+    visibility: visible;
+    background-color: transparent;
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+    z-index: 11;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transition: visibility 0.5s;
+    left: 0;
+    bottom: 0;
+    display: block;
+}
+
+.hotline-phone-ring-circle {
+    width: 110px;
+    height: 110px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 2px solid #1564a7;
+    -webkit-animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+    animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+    transition: all 0.5s;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    opacity: 0.5;
+}
+
+.hotline-phone-ring-circle-fill {
+    width: 80px;
+    height: 80px;
+    top: 16px;
+    left: 16px;
+    position: absolute;
+    background-color: rgba(21, 100, 167, 0.7);
+    border-radius: 100%;
+    border: 2px solid transparent;
+    -webkit-animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    transition: all 0.5s;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+.hotline-phone-ring-img-circle {
+    background-color: #1564a7;
+    width: 50px;
+    height: 50px;
+    top: 31px;
+    left: 31px;
+    position: absolute;
+    background-size: 20px;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+    animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hotline-phone-ring-img-circle .pps-btn-img {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.hotline-bar {
+    position: absolute;
+    background: #1564a7;
+    height: 45px;
+    width: 165px;
+    line-height: 40px;
+    border-radius: 3px;
+    padding: 0 10px;
+    background-size: 100%;
+    cursor: pointer;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    z-index: 9;
+    border-radius: 50px;
+    left: 42px;
+    bottom: 31px;
+}
+
+.hotline-bar>a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    text-indent: 32px;
+    letter-spacing: 1px;
+    display: block;
+    line-height: 45px;
+    font-family: Arial;
+}
+
+.hotline-bar>a:hover,
+.hotline-bar>a:active {
+    color: #fff;
+}
+
+span.background-call {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+}
+
+span.background-call {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAolBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8ELnaCAAAANXRSTlMA/fnwB9f2sUzq5dLDrDUi+t27jWpmXzALBOHNtJ6Dd1hUR0I9OB8Cx5mSiH1wGxkWEaWjUGLgVpsAAAFWSURBVDjLdZPpkoIwEIQn4RIFFA+8EURBXY+98v6vtrkYki38fqWmO0yqZwCDJjnsvHASbuPsC3oYjBhC4vF/+RwRxhwHLTRfm/I4IL4WkcA19CHrIVqB5pmqSjixHVetf3pMcnkVxHYMpL7Sr9/zngvbkDYAbZFs5JumtuMXOKrB8AMER9swFfno8wIkI8vg8zAifT4IebmjzGIJY/Nrruczmww7UN/lBoaJYeO5PjnshC8wmKOB58ANyYTZFFDq+5xKDHUjxvSDT60h6QypGM76nNU8/ZnSh7wirugR3KAjl5WYn4RX7wJ5QEfUhvN0ZAvFHfWEqJw4c2YgJyIjUx0Ezc50XOSl9U2Gpzd3JdwI2eaPu6rMcOFZLyH+HftenRSgedE+nZbQMuvT/SPqtRrQ9krM/icl4hpGA4AKl2GUudDxzbdJ+d0ySCn14gosgiCB9/wB7hZ8KfMqBEkAAAAASUVORK5CYII=);
+}
+
+@-webkit-keyframes phonering-alo-circle-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(0.5) skew(1deg);
+        -webkit-opacity: 0.1;
+    }
+
+    30% {
+        -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+        -webkit-opacity: 0.5;
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        -webkit-opacity: 0.1;
+    }
+}
+
+@-webkit-keyframes phonering-alo-circle-fill-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+        opacity: 0.6;
+    }
+
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+        opacity: 0.6;
+    }
+}
+
+@-webkit-keyframes phonering-alo-circle-img-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+
+    10% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+
+    20% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+
+    30% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+
+    40% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);

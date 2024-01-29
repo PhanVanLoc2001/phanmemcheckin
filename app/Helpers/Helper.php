@@ -75,65 +75,28 @@ function showCategoriesproduct($sub, $select = null, $parent_id = 0)
     }
 }
 
-function showMenuItems($menuItems, $parent = 0)
+function showMenuItems($menuItems, $parent = 0): void
 {
-    foreach ($menuItems as $key => $menuItem) {
+    foreach ($menuItems as $menuItem) {
+        // dd($menuItem);
         // Nếu là menu item con của $parent_id thì hiển thị
-
-        if ($menuItem['parent'] == $parent) {
-            $hasChildren_ = false;
-            $id = $menuItem['id'];
-            foreach ($menuItems as $key_ => $menuItem_) {
-                if ($menuItem_['parent'] == $menuItem['id']) {
-                    $hasChildren_ = true;
+        if ($menuItem->parent == $parent) {
+            $hasChildren = false; // Khai báo biến $hasChildren
+            foreach ($menuItems as $childItem) {
+                if ($childItem->parent == $menuItem->id) {
+                    $hasChildren = true;
                     break;
                 }
             }
-            echo '<li' . (($menuItem['slug'] == "san-pham" && $hasChildren_) ? ' class="has-submenu megamenu" ' : ($hasChildren_ ? ' class="has-submenu"' : '')) . '>';
 
-            echo '<a href="' . url($menuItem['slug']) . '" >' . $menuItem['name'];
-            if ($hasChildren_) {
-                echo ' <i class="fas fa-chevron-down"></i>';
-            }
+            echo '<li' . ($hasChildren ? ' class="has-children"' : '') . '>';
+            echo '<a href="' . url($menuItem->slug) . '">' . $menuItem->name;
             echo '</a>';
-            if ($menuItem['slug'] == "san-pham") {
-                $menuItems = MenuItem::with('products')->get();
-                // dd($menuItems);
-                if ($hasChildren_) {
-                    echo '<ul class="submenu mega-submenu">';
-                    echo '<li>';
-                    echo '<div class="megamenu-wrapper">
-                    <div class="row">';
-                    foreach ($menuItems as $key__ => $menuItem__) {
-                        if ($menuItem__['parent'] == $menuItem['id']) {
-                            echo '
-                            <div class="col-lg-2">
-                                <div class="single-demo ">
-                                    <div class="demo-img" style="width:80%">
-                                    <a class="text-center" href="' . url('san-pham/' . $menuItem__['slug']) . '"><img src="' .  (isset($menuItem__->products->prod_library) ? url($menuItem__->products->prod_library) : url('assets/img/default.jpg'))  . '" class="img-fluid" alt="img"></a>
-                                    </div>
-                                    <div class="demo-info">
-                                        <a href="' . url('san-pham/' . $menuItem__['slug']) . '">' . Str::limit($menuItem__['name'], 30) .
-                                '</a>
-                                        </div>
-                                </div>
-                            </div>';
-                        }
-                    }
-                    echo '    </div>
-                    </div></li>';
-
-                    echo '</ul>';
-                }
-            } else {
-                if ($hasChildren_) {
-                    echo '<ul class="submenu">';
-                    unset($menuItems[$key]);
-                    showMenuItems($menuItems, $id);
-                    echo '</ul>';
-                }
+            if ($hasChildren) {
+                echo '<ul class="dropdown">';
+                showMenuItems($menuItems, $menuItem->id);
+                echo '</ul>';
             }
-
             echo '</li>';
         }
     }

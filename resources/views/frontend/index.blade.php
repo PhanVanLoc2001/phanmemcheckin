@@ -1,13 +1,13 @@
 @extends('frontend.layouts.app')
 @section('title')
-    Phần mềm chấm công công nghệ AI, quản lý nhân sự với công nghệ hiện đại, chi phí tối giản
+Phần mềm chấm công công nghệ AI, quản lý nhân sự với công nghệ hiện đại, chi phí tối giản
 @endsection
 @section('meta-desc')
-    Phần mềm Ninja cung cấp giải pháp Marketing đa kênh hiệu quả: Phần mềm quảng cáo Facebook; phần mềm quảng cáo zalo, phần
-    mềm quảng cáo Tiktok, phần mềm quảng cáo Telegram...
+Phần mềm Ninja cung cấp giải pháp Marketing đa kênh hiệu quả: Phần mềm quảng cáo Facebook; phần mềm quảng cáo zalo, phần
+mềm quảng cáo Tiktok, phần mềm quảng cáo Telegram...
 @endsection
 @section('meta-title')
-    Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
+Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
 @endsection
 @section('schema')
     <script type="application/ld+json">
@@ -24,6 +24,9 @@
   }
 }
 </script>
+@endsection
+@section('styles')
+<link rel="stylesheet" href="{{url('css/jquery.bxslider.min.css')}}">
 @endsection
 @section('content')
     @php
@@ -70,55 +73,98 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="section-title">
-                        <h2 class="text-white">Tính năng chính của <span>phần mềm checkin Achamcong</span></h2>
+                        <h2 class="text-white">Tính năng chính của phần mềm checkin Achamcong</h2>
                         <div class="line white"></div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg col-sm-6">
                     <div class="future-box">
-                        <div class="future-timeline">
+                        <div class="future-timeline how-app-work-slider-pager">
                             <ul>
                                 <li class="timeline">
-                                    <h4 class="sub-title">Checkin check out công nghệ AI</h4>
-                                    <p>Lorem Ipsum has been the industry's</p>
+                                    <a href="#" class="active" data-slide-index="0">
+                                        <h4 class="sub-title">Quản lý ca</h4>
+                                        <p>Nhân viên Đăng ký ca làm</p>
+                                    </a>
                                 </li>
                                 <li class="timeline">
-                                    <h4 class="sub-title">Quản lý nhân sự chuyên nghiệp</h4>
-                                    <p>Lorem Ipsum has been the industry's</p>
+                                    <a href="#" data-slide-index="1">
+                                        <h4 class="sub-title">Quản lý nhân sự</h4>
+                                        <p>Quản lý Hồ sơ, Khen thưởng, Kỷ luật</p>
+                                    </a>
                                 </li>
                                 <li class="timeline">
-                                    <h4 class="sub-title">Thông tin chi tiết, chính xác</h4>
-                                    <p>Many desktop publishing packages</p>
+                                    <a href="#" data-slide-index="2">
+                                        <h4 class="sub-title">Quản lý báo cáo</h4>
+                                        <p>Quản lý Hồ sơ, Khen thưởng, Kỷ luật</p>
+                                    </a>
                                 </li>
                                 <li class="timeline">
-                                    <h4 class="sub-title">Easy File Sharing</h4>
-                                    <p>Lorem Ipsum has been the industry's</p>
+                                    <a href="#" data-slide-index="3">
+                                        <h4 class="sub-title">Quản lý đơn từ</h4>
+                                        <p>Đề nghị nghỉ phép, đi muộn,...</p>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 future-mobile"><img class="img-fluid" src="img/feature-mob.png" alt="feature-mob">
+                <div class="col-md-3 future-mobile how-app-work-slider-wrapper">
+                    <ul class="slider">
+                        <li>
+                            <img class="img-fluid" src="{{ url('img/app-1.webp') }}" alt="feature-mob">
+                        </li>
+                        <li>
+                            <img class="img-fluid" src="{{ url('img/app-2.webp') }}" alt="feature-mob">
+                        </li>
+                        <li>
+                            <img class="img-fluid" src="{{ url('img/app-3.webp') }}" alt="feature-mob">
+                        </li>
+                        <li>
+                            <img class="img-fluid" src="{{ url('img/app-4.webp') }}" alt="feature-mob">
+                        </li>
+                        <li>
+                            <img class="img-fluid" src="{{ url('img/app-5.webp') }}" alt="feature-mob">
+                        </li>
+                        <li>
+                            <img class="img-fluid" src="{{ url('img/app-6.webp') }}" alt="feature-mob">
+                        </li>
+                        <li>
+                            <img class="img-fluid" src="{{ url('img/app-7.webp') }}" alt="feature-mob">
+                        </li>
+                        <li>
+                            <img class="img-fluid" src="{{ url('img/app-8.webp') }}" alt="feature-mob">
+                        </li>
+                    </ul>
+
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg col-sm-6">
                     <div class="future-box">
-                        <div class="future-timeline-right">
+                        <div class="future-timeline-right how-app-work-slider-pager">
                             <ul class="text-start">
                                 <li class="timeline-right">
-                                    <h4>Easy Installation</h4>
-                                    <p>Lorem Ipsum has been the industry's</p>
+                                    <a href="#" data-slide-index="4">
+                                        <h4>Checkin check out công nghệ AI</h4>
+                                    <p>Nhận diện khuôn mặt tự động, ...</p>
+                                    </a>
                                 </li>
                                 <li class="timeline-right">
-                                    <h4>Multi Platform Chat App</h4>
-                                    <p>Lorem Ipsum has been the industry's</p>
+                                    <a href="#" data-slide-index="5">
+                                        <h4>Quản lý nhân sự chuyên nghiệp</h4>
+                                    <p>Thống kê, quản lý, theo dõi chính xác </p>
+                                    </a>
                                 </li>
                                 <li class="timeline-right">
-                                    <h4>Secure Backup & Recovery</h4>
-                                    <p>Many desktop publishing packages</p>
+                                    <a href="#" data-slide-index="6">
+                                        <h4>Thông tin chi tiết, chính xác</h4>
+                                    <p>Lorem Ipsum has been the industry's</p>
+                                    </a>
                                 </li>
                                 <li class="timeline-right">
-                                    <h4>Easy File Sharing</h4>
-                                    <p>Lorem Ipsum has been the industry's</p>
+                                    <a href="#" data-slide-index="7">
+                                        <h4>Easy Installation</h4>
+                                    <p>Thông tin chấm công, phép năm</p>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -130,8 +176,7 @@
     <section class="feature">
         <div class="container">
             <div class="col-md-8 offset-md-2 text-center">
-
-                <h2><span>Tính năng chính </span>của phần mềm checkin Achamcong</h2>
+                <h2><span>Lý do nên chọn phần mềm </span>check in Achamcong</h2>
                 <p>
                     Achamcong là giải pháp quản lý nhân sự tiên phong sử dụng công nghệ camera AI. Hội tụ đầy đủ những tính
                     năng
@@ -200,12 +245,21 @@
                 <div class="col-sm-12">
                     <div class="swiper-screenshots-container-1 swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="img/1.png" alt="1"></div>
-                            <div class="swiper-slide"><img src="img/2.png" alt="2"></div>
-                            <div class="swiper-slide"><img src="img/3.png" alt="3"></div>
-                            <div class="swiper-slide"><img src="img/4.png" alt="4"></div>
-                            <div class="swiper-slide"><img src="img/1.png" alt="5"></div>
-                            <div class="swiper-slide"><img src="img/2.png" alt="5"></div>
+
+                            <div class="swiper-slide"><img src="{{ url('img/app-3.webp') }}" alt="3"></div>
+                            <div class="swiper-slide"><img src="{{ url('img/app-2.webp') }}" alt="2"></div>
+                            <div class="swiper-slide"><img src="{{ url('img/app-1.webp') }}" alt="1"></div>
+
+                            <div class="swiper-slide"><img src="{{ url('img/app-4.webp') }}" alt="4"></div>
+                            <div class="swiper-slide"><img src="{{ url('img/app-5.webp') }}" alt="5"></div>
+                            <div class="swiper-slide"><img src="{{ url('img/app-6.webp') }}" alt="5"></div>
+                            <div class="swiper-slide"><img src="{{ url('img/app-7.webp') }}" alt="6"></div>
+                            <div class="swiper-slide"><img src="{{ url('img/app-8.webp') }}" alt="7"></div>
+                            <div class="swiper-slide"><img src="{{ url('img/app-9.webp') }}" alt="8"></div>
+                            <div class="swiper-slide"><img src="{{ url('img/app-10.webp') }}" alt="9"></div>
+                            <div class="swiper-slide"><img src="{{ url('img/app-11.webp') }}" alt="10"></div>
+                            <div class="swiper-slide"><img src="{{ url('img/app-12.webp') }}" alt="11"></div>
+                            <div class="swiper-slide"><img src="{{ url('img/app-13.webp') }}" alt="12"></div>
                         </div>
                     </div>
                 </div>
@@ -215,10 +269,10 @@
     <section class="question">
         <div class="container bg-quest">
             <div class="row pad-quest">
-                <div class="col-lg-6 col-12">
-                    <img src="img/feature-mob.png" alt="phone">
+                <div class="col-lg-6 col-12 text-center">
+                    <img src="{{ url('img/app-5.webp') }}" alt="phone" width="60%">
                 </div>
-                <div class="col-lg-6 col-12">
+                <div class="col-lg-6 col-12 d-flex align-items-center">
                     <div class="card-quest">
                         <div class="title">
                             <h2>Phần mềm checkin Achamcong <span>giúp gì cho doanh nghiệp?</span></h2>
@@ -237,10 +291,12 @@
                         </div>
                         <div class="download">
                             <div class="android">
-                                <img src="/img/dowload1.webp" alt="download">
+                                <a href="https://apps.apple.com/vn/app/a-ch%E1%BA%A5m-c%C3%B4ng/id1532369664?l=vi"><img
+                                        src="{{ url('img/dowload1.webp') }}" alt="download"></a>
                             </div>
                             <div class="apple">
-                                <img src="/img/download2.webp" alt="download">
+                                <a href="https://play.google.com/store/apps/details?id=com.checkinproject"><img
+                                        src="{{ url('img/download2.webp') }}" alt="download"></a>
                             </div>
                         </div>
                     </div>
@@ -551,4 +607,17 @@
     </section>
 @endsection
 @section('scripts')
+<script src="{{url('js/jquery.bxslider.min.js')}}"></script>
+    <script>
+        if ($('.how-app-work-slider-wrapper .slider').length) {
+            $('.how-app-work-slider-wrapper .slider').bxSlider({
+                // adaptiveHeight: true,
+                auto: true,
+                controls: true,
+                pause: 6000,
+                speed: 2000,
+                pagerCustom: '.how-app-work-slider-pager'
+            });
+        }
+    </script>
 @endsection

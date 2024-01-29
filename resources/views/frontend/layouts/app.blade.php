@@ -34,6 +34,24 @@
 <body>
     @include('frontend.layouts.header')
     @yield('content')
+    <div class="hotline-phone-ring-wrap" id="hotline-phone-1">
+        <div class="hotline-phone-ring">
+            <div class="hotline-phone-ring-circle"></div>
+            <div class="hotline-phone-ring-circle-fill"></div>
+            <div class="hotline-phone-ring-img-circle"><a
+                    href="tel:@if ($contact) {{ $contact->phone_link }} @endif"
+                    aria-label="Number Phone" class="pps-btn-img">
+                    <span class="background-call"></span> </a></div>
+        </div>
+        <div class="hotline-bar"><a href="@if ($contact) {{ $contact->phone_link }} @endif"
+                aria-label="Số điện thoại: @if ($contact) {{ $contact->phone_number }} @endif"
+                rel="nofollow">
+                <span class="text-hotline">
+                    @if ($contact)
+                        {{ $contact->phone_number }}
+                    @endif
+                </span> </a></div>
+    </div>
     @include('frontend.layouts.footer')
     @include('frontend.layouts.script')
 </body>

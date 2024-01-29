@@ -170,7 +170,7 @@ class HandleController extends Controller
     {
         $news = Post::whereHas('categories', function ($query) use ($category) {
             $query->where('cate_title', $category->cate_title);
-        })->orderBy('created_at', 'DESC')->paginate(9);
+        })->orderBy('created_at', 'DESC')->paginate(10);
         $products = Product::whereHas('categories', function ($query) use ($category) {
             $query->where('cate_title', $category->cate_title);
         })->orderBy('created_at', 'DESC')->paginate(12);

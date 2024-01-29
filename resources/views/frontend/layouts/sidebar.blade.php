@@ -42,7 +42,7 @@
                     <div class="post-info">
                         <p>{{ Carbon::parse($new->created_at)->locale('vi')->diffForHumans() }}</p>
                         <h4>
-                            <a href="{{ $new->post_slug }}">{{ Str::limit($new->post_title), 60 }}</a>
+                            <a href="{{ $new->post_slug }}">{{ Str::limit($new->post_title, 60) }}</a>
                         </h4>
                     </div>
                 </li>
