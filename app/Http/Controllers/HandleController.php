@@ -17,7 +17,7 @@ class HandleController extends Controller
     public function index()
     {
         $tools = $this->spinPost(1);
-        $posts_all = $this->latestNews(6, 'Tin Tức');
+        $posts_all = $this->latestNews(2, 'Tin Tức');
         $newspaper = $this->newspaper(4, 'bao-chi');
 
         // Kiểm tra xem có bài viết nào được ghim không

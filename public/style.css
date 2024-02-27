@@ -845,7 +845,7 @@ li.slick-active {
 
 .news .card-new-right .img-left img {
     border-radius: 12px;
-    max-height: 170px;
+    height: 225px;
 }
 
 .news .card-new-right .content-right {
@@ -1301,4 +1301,7 @@ span.background-call {
     100% {
         -webkit-transform: rotate(0) scale(1) skew(1deg);
     }
+}
+.atv-new{
+    width: 100%;
 }

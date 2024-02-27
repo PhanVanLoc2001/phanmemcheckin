@@ -1,12 +1,12 @@
 @extends('frontend.layouts.app')
 @section('title')
-    {{ $product->prod_name }}
+{{ $product->prod_name }}
 @endsection
 @section('meta-desc')
-    {{ $product->prod_seodesc }}
+{{ $product->prod_seodesc }}
 @endsection
 @section('meta-title')
-    {{ $product->prod_title }}
+{{ $product->prod_title }}
 @endsection
 @section('content')
     <section class="hero-section-two">

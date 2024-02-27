@@ -234,14 +234,6 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
     <section class="theme-bg screenshots" id="screenshots">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="section-title">
-                        <h2 class="text-white">Chat Loop Screen Shot</h2>
-                        <div class="line white"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
                 <div class="col-sm-12">
                     <div class="swiper-screenshots-container-1 swiper-container">
                         <div class="swiper-wrapper">
@@ -514,19 +506,18 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
         <div class="container benefit">
             <div class="row">
                 <div class="col-lg-4 col-md-6-col-12 margin-bottom">
+                    @foreach ($tools as $spin)
+                        @if ($spin)
                     <div class="card-new">
-                        <div class="atv-new img-hover-zoom img-hover-zoom--slowmo">
-                            <a href="#"><img src="img/demo-post.webp" alt="demo"></a>
+                        <div class="atv-new img-hover-zoom img-hover-zoom--slowmo atv-new">
+                            <a href="{{ url($spin->post_slug) }}"><img src="{{ $spin->post_thumb ? url($spin->post_thumb) : url('assets/img/default.jpg') }}" alt="demo"></a>
                         </div>
                         <div class="box-content">
                             <div class="title-new">
-                                <p><a href="#">Hướng dẫn cách tạo page zalo trên điện thoại nâng cao hiệu quả bán
-                                        hàng</a></p>
+                                <p><a href="{{ url($spin->post_slug) }}">{{ $spin->post_title }}</a></p>
                             </div>
                             <div class="desc-new">
-                                <a href="#">Trong thời đại công nghệ phát triển, việc quản lý nhân viên từ xa trở nên
-                                    phổ biến hơn bao
-                                    giờ hết</a>
+                                <a href="{{ url($spin->post_slug) }}">{!! $spin->post_desc !!}</a>
                             </div>
                         </div>
 
@@ -536,26 +527,29 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
                                     <img src="./img/Time-Circle.webp" alt="icon-time">
                                 </div>
                                 <div class="title">
-                                    59 phút trước
+                                    {{ Carbon::parse($spin->created_at)->locale('vi')->diffForHumans() }}
                                 </div>
                             </div>
                         </div>
                     </div>
+                    @endif
+
+                        @endforeach
                 </div>
                 <div class="col-lg-8 col-md-12 col-12 d-flex flex-column justify-content-xl-between">
+                    @foreach ($posts_all as $new)
                     <div class="col-lg-12 col-12 margin-bottom">
                         <div class="card-new-right">
                             <div class="img-left img-hover-zoom img-hover-zoom--slowmo">
-                                <a href="#"><img src="img/demo-post.webp" alt=""></a>
+                                <a href="{{ url($new->post_slug) }}"><img src="{{ $new->post_thumb ? url($new->post_thumb) : url('assets/img/default.jpg') }}" alt="avt"></a>
                             </div>
                             <div class="content-right">
                                 <div class="box-content">
                                     <div class="title">
-                                        <p><a href="#">Hướng dẫn cách lưu ảnh trên instagram đơn giản, nhanh
-                                                chóng</a></p>
+                                        <p><a href="{{ url($new->post_slug) }}">{{ $new->post_title }}</a></p>
                                     </div>
                                     <div class="desc">
-                                        Instagram là một ứng dụng mạng xã hội với nhiều hình ảnh đẹp và chất lượng cao
+                                        {!! $new->post_desc !!}
                                     </div>
                                     <div class="more">
                                         <div class="time">
@@ -563,7 +557,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
                                                 <img src="./img/Time-Circle.webp" alt="icon-time">
                                             </div>
                                             <div class="title">
-                                                59 phút trước
+                                                {{ Carbon::parse($new->created_at)->locale('vi')->diffForHumans() }}
                                             </div>
                                         </div>
 
@@ -572,35 +566,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-12 col-12 margin-bottom">
-                        <div class="card-new-right">
-                            <div class="img-left img-hover-zoom img-hover-zoom--slowmo">
-                                <a href="#"><img src="img/demo-post.webp" alt=""></a>
-                            </div>
-                            <div class="content-right">
-                                <div class="box-content">
-                                    <div class="title">
-                                        <p><a href="#">Hướng dẫn cách lưu ảnh trên instagram đơn giản, nhanh
-                                                chóng</a></p>
-                                    </div>
-                                    <div class="desc">
-                                        Instagram là một ứng dụng mạng xã hội với nhiều hình ảnh đẹp và chất lượng cao
-                                    </div>
-                                    <div class="more">
-                                        <div class="time">
-                                            <div class="icon">
-                                                <img src="./img/Time-Circle.webp" alt="icon-time">
-                                            </div>
-                                            <div class="title">
-                                                59 phút trước
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -613,7 +579,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
             $('.how-app-work-slider-wrapper .slider').bxSlider({
                 // adaptiveHeight: true,
                 auto: true,
-                controls: true,
+                controls: false,
                 pause: 6000,
                 speed: 2000,
                 pagerCustom: '.how-app-work-slider-pager'
