@@ -84,25 +84,25 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
                                 <li class="timeline">
                                     <a href="#" class="active" data-slide-index="0">
                                         <h4 class="sub-title">Quản lý ca</h4>
-                                        <p>Nhân viên Đăng ký ca làm</p>
+                                        <p>Nhân viên Đăng ký ca làm linh hoạt tự động</p>
                                     </a>
                                 </li>
                                 <li class="timeline">
                                     <a href="#" data-slide-index="1">
                                         <h4 class="sub-title">Quản lý nhân sự</h4>
-                                        <p>Quản lý Hồ sơ, Khen thưởng, Kỷ luật</p>
+                                        <p>Quản lý thông tin hồ sơ cá nhân, phòng ban, chức vụ nhân viên</p>
                                     </a>
                                 </li>
                                 <li class="timeline">
                                     <a href="#" data-slide-index="2">
                                         <h4 class="sub-title">Quản lý báo cáo</h4>
-                                        <p>Quản lý Hồ sơ, Khen thưởng, Kỷ luật</p>
+                                        <p>Báo cáo đơn từ, thông tin chấm công của nhân viên</p>
                                     </a>
                                 </li>
                                 <li class="timeline">
                                     <a href="#" data-slide-index="3">
                                         <h4 class="sub-title">Quản lý đơn từ</h4>
-                                        <p>Đề nghị nghỉ phép, đi muộn,...</p>
+                                        <p>Quản lý đơn phép, đi gặp khách hàng, đi muộn về sớm của các thành viên</p>
                                     </a>
                                 </li>
                             </ul>
@@ -115,7 +115,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
                             <img class="img-fluid" src="{{ url('img/app-1.webp') }}" alt="feature-mob">
                         </li>
                         <li>
-                            <img class="img-fluid" src="{{ url('img/app-2.webp') }}" alt="feature-mob">
+                            <img class="img-fluid" src="{{ url('img/app-13.webp') }}" alt="feature-mob">
                         </li>
                         <li>
                             <img class="img-fluid" src="{{ url('img/app-3.webp') }}" alt="feature-mob">
@@ -144,26 +144,26 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
                             <ul class="text-start">
                                 <li class="timeline-right">
                                     <a href="#" data-slide-index="4">
-                                        <h4>Checkin check out công nghệ AI</h4>
-                                    <p>Nhận diện khuôn mặt tự động, ...</p>
+                                        <h4>Chấm công bằng công nghệ AI</h4>
+                                    <p>Chấm công tự động bằng khuôn mặt sử dụng công nghệ AI</p>
                                     </a>
                                 </li>
                                 <li class="timeline-right">
                                     <a href="#" data-slide-index="5">
-                                        <h4>Quản lý nhân sự chuyên nghiệp</h4>
+                                        <h4>Thống kê bảng chấm công trong tháng</h4>
                                     <p>Thống kê, quản lý, theo dõi chính xác </p>
                                     </a>
                                 </li>
                                 <li class="timeline-right">
                                     <a href="#" data-slide-index="6">
-                                        <h4>Thông tin chi tiết, chính xác</h4>
-                                    <p>Lorem Ipsum has been the industry's</p>
+                                        <h4>Tích hợp chấm công bằng Camera</h4>
+                                    <p>Chấm công bằng Camera nhận diện khuôn mặt</p>
                                     </a>
                                 </li>
                                 <li class="timeline-right">
                                     <a href="#" data-slide-index="7">
-                                        <h4>Easy Installation</h4>
-                                    <p>Thông tin chấm công, phép năm</p>
+                                        <h4>Bảng tin nội bộ</h4>
+                                    <p>Hiện thị bảng tin, Kudobox</p>
                                     </a>
                                 </li>
                             </ul>
@@ -186,21 +186,21 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
             <div class="row">
                 <div class="col-lg-4 text-center pb-4">
                     <div class="process-box">
-                        <img src="img/svg/text.webp" alt="icon">
+                        <img src="{{url('img/svg/text.webp')}}" alt="icon">
                         <h3>Chấm công nhanh chóng</h3>
                         <p>Chấm công bằng Camera AI hoặc chấm công trên app Achamcong ở điện thoại nhanh chóng.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center pb-4">
                     <div class="process-box">
-                        <img src="img/svg/OBJECT.webp" alt="icon">
+                        <img src="{{url('img/svg/OBJECT.webp')}}" alt="icon">
                         <h3>Tiết kiệm chi phí</h3>
                         <p>Tiết kiệm chi phí nhân sự .Lắp đặt camera 1 lần sử dụng mãi mãi.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center pb-4">
                     <div class="process-box">
-                        <img src="img/svg/OBJECTS.webp" alt="icon">
+                        <img src="{{url('img/svg/OBJECTS.webp')}}" alt="icon">
                         <h3>Hỗ trợ 24/7</h3>
                         <p>Achamcong có đội ngũ support khách hàng 24/7. Vì vậy, mọi vấn để sẽ được giải đáp nhanh chóng.
                         </p>
@@ -208,7 +208,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
                 </div>
                 <div class="col-lg-4 text-center pb-4">
                     <div class="process-box">
-                        <img src="img/svg/text.webp" alt="icon">
+                        <img src="{{url('img/svg/text.webp')}}" alt="icon">
                         <h3>Quản lý chấm công dễ dàng</h3>
                         <p>Quản lý check in – check out, đi sớm, về muộn, xin nghỉ phép, công tác,… nhanh chóng, chính xác
                         </p>
@@ -216,14 +216,14 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
                 </div>
                 <div class="col-lg-4 text-center pb-4">
                     <div class="process-box">
-                        <img src="img/svg/OBJECT.webp" alt="icon">
+                        <img src="{{url('img/svg/OBJECT.webp')}}" alt="icon">
                         <h3>Bảo mật cao</h3>
                         <p>Tích hợp công nghệ AI nhận diện khuôn mặt chính xác, không thể gian lận trong chấm công.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center pb-4">
                     <div class="process-box">
-                        <img src="img/svg/OBJECTS.webp" alt="icon">
+                        <img src="{{url('img/svg/OBJECTS.webp')}}" alt="icon">
                         <h3>Update mới nhất</h3>
                         <p>Chúng tôi luôn update cải thiện tính năng mới nhanh và tối ưu nhất.</p>
                     </div>
@@ -312,7 +312,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
 
                         <div class="img-phay d-flex flex-row-reverse">
 
-                            <img src="./img/phay.webp" alt="phay">
+                            <img src="{{url('img/phay.webp')}}" alt="phay">
 
                         </div>
 
@@ -322,7 +322,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
 
                                 <div class="img-comment">
 
-                                    <img src="img/img-tuananh.webp" alt="avt">
+                                    <img src="{{url('img/img-tuananh.webp')}}" alt="avt">
 
                                 </div>
 
@@ -357,7 +357,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
 
                         <div class="img-phay d-flex flex-row-reverse">
 
-                            <img src="./img/phay.webp" alt="phay">
+                            <img src="{{url('img/phay.webp')}}" alt="phay">
 
                         </div>
 
@@ -367,7 +367,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
 
                                 <div class="img-comment">
 
-                                    <img src="img/img-tuananh.webp" alt="avt">
+                                    <img src="{{url('img/img-tuananh.webp')}}" alt="avt">
 
                                 </div>
 
@@ -403,7 +403,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
 
                         <div class="img-phay d-flex flex-row-reverse">
 
-                            <img src="./img/phay.webp" alt="phay">
+                            <img src="{{url('img/phay.webp')}}" alt="phay">
 
                         </div>
 
@@ -413,7 +413,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
 
                                 <div class="img-comment">
 
-                                    <img src="img/img-tuananh.webp" alt="avt">
+                                    <img src="{{url('img/img-tuananh.webp')}}" alt="avt">
 
                                 </div>
 
@@ -449,7 +449,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
 
                         <div class="img-phay d-flex flex-row-reverse">
 
-                            <img src="./img/phay.webp" alt="phay">
+                            <img src="{{url('img/phay.webp')}}" alt="phay">
 
                         </div>
 
@@ -577,11 +577,11 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
     <script>
         if ($('.how-app-work-slider-wrapper .slider').length) {
             $('.how-app-work-slider-wrapper .slider').bxSlider({
-                // adaptiveHeight: true,
+                adaptiveHeight: true,
                 auto: true,
                 controls: false,
-                pause: 6000,
-                speed: 2000,
+                pause: 5000,
+                speed: 1000,
                 pagerCustom: '.how-app-work-slider-pager'
             });
         }
