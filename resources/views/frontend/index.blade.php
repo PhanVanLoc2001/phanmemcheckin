@@ -36,7 +36,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
     <section class="banner">
         <div class="container">
             <div class="row">
-                <div class="banner-img">
+                <div class="banner-img wow fadeInDown" data-wow-duration="1s" data-wow-delay=".25s">
                     <div class="col-lg-7 col-md-6 col-12 padding-left">
                         <div class="content">
                             <h1>Achamcong</h1>
@@ -51,7 +51,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
             </div>
         </div>
     </section>
-    <section class="video">
+    <section class="video wow fadeInUp"  data-wow-delay=".25s" data-wow-duration="2s">
         <div class="container">
             <div class="title">
                 <h2>Video giới thiệu phần mềm <br><span>checkin Achamcong</span></h2>
@@ -67,7 +67,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
         </div>
 
     </section>
-    <section class="theme-bg feature" id="feature">
+    <section class="theme-bg feature wow fadeInUp"  data-wow-delay=".25s" data-wow-duration="2s" id="feature">
         <div class="container">
             <div class="animation-circle-inverse"><i></i><i></i><i></i></div>
             <div class="row">
@@ -173,7 +173,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
             </div>
         </div>
     </section>
-    <section class="feature">
+    <section class="feature wow fadeInUp"  data-wow-delay=".25s" data-wow-duration="2s">
         <div class="container">
             <div class="col-md-8 offset-md-2 text-center">
                 <h2><span>Lý do nên chọn phần mềm </span>check in Achamcong</h2>
@@ -231,7 +231,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
             </div>
         </div>
     </section>
-    <section class="theme-bg screenshots" id="screenshots">
+    <section class="theme-bg screenshots wow fadeInDown"  data-wow-delay=".25s" data-wow-duration="2s" id="screenshots">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -258,7 +258,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
             </div>
         </div>
     </section>
-    <section class="question">
+    <section class="question wow fadeInDown"  data-wow-delay=".25s" data-wow-duration="2s">
         <div class="container bg-quest">
             <div class="row pad-quest">
                 <div class="col-lg-6 col-12 text-center">
@@ -296,7 +296,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
             </div>
         </div>
     </section>
-    <section class="comment">
+    <section class="comment wow fadeInDown"  data-wow-delay=".25s" data-wow-duration="2s">
         <div class="container">
             <div class="title">
                 <h2>Cảm nhận của khách hàng <br><span>về phần mềm checkin Achamcong</span></h2>
@@ -497,7 +497,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
 
         </div>
     </section>
-    <section class="news">
+    <section class="news wow fadeInDown"  data-wow-delay=".25s" data-wow-duration="2s">
         <div class="container">
             <div class="title">
                 <h2>Tin tức <span>mới nhất</span></h2>

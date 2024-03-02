@@ -23,6 +23,18 @@
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="{{ url('img/favicon.webp') }}">
     @include('frontend.layouts.style')
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> --}}
+    <script src="{{ url('js/wow.min.js') }}"></script>
+    <script>
+        // Kiểm tra kích thước màn hình
+        if (window.innerWidth <= 768) {
+            // Tắt Wow.js nếu kích thước màn hình nhỏ hơn hoặc bằng 768px
+            new WOW({mobile: false}).init();
+        } else {
+            // Khởi tạo Wow.js nếu kích thước màn hình lớn hơn 768px
+            new WOW().init();
+        }
+    </script>
     @yield('schema')
     <!-- Google tag (gtag.js) -->
     @if ($contact)

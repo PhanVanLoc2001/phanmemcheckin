@@ -13,6 +13,5 @@
 <script src="{{ url('js/slider.js') }}"></script>
 <script src="{{ url('js/slick.js') }}"></script>
 <script src="{{ url('js/swiper.min.js') }}"></script>
-<script src="{{ url('js/wow.min.js') }}"></script>
 
 @yield('scripts')
