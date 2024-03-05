@@ -72,7 +72,7 @@
                             {{ $news->onEachSide(2)->withQueryString()->links() }}
                         </div>
                     </div>
-                    <div class="col-md-4 col-lg-3 list-sidebar">
+                    <div class="col-lg-4 col-lg-3 list-sidebar">
                         @include('frontend.layouts.sidebar-news')
                     </div>
                 </div>

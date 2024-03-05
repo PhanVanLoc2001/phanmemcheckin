@@ -3,8 +3,7 @@
 Phần mềm chấm công công nghệ AI, quản lý nhân sự với công nghệ hiện đại, chi phí tối giản
 @endsection
 @section('meta-desc')
-Phần mềm Ninja cung cấp giải pháp Marketing đa kênh hiệu quả: Phần mềm quảng cáo Facebook; phần mềm quảng cáo zalo, phần
-mềm quảng cáo Tiktok, phần mềm quảng cáo Telegram...
+Phần mềm Ninja cung cấp giải pháp Marketing đa kênh hiệu quả: Phần mềm quảng cáo Facebook; phần mềm quảng cáo zalo, phần mềm quảng cáo Tiktok, phần mềm quảng cáo Telegram...
 @endsection
 @section('meta-title')
 Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
@@ -26,7 +25,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
 </script>
 @endsection
 @section('styles')
-<link rel="stylesheet" href="{{url('css/jquery.bxslider.min.css')}}">
+    <link rel="stylesheet" href="{{ url('css/jquery.bxslider.min.css') }}">
 @endsection
 @section('content')
     @php
@@ -43,7 +42,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
                             <span>Tiên phong số hóa chấm công</span>
                             <p>Phần mềm chấm công công nghệ AI, quản lý nhân sự với công nghệ hiện đại, chi phí tối giản</p>
                             <div class="contact">
-                                <a href="/">Liên hệ tư vấn</a>
+                                <a href="#" onclick="showTawkto()">Liên hệ tư vấn</a>
                             </div>
                         </div>
                     </div>
@@ -51,7 +50,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
             </div>
         </div>
     </section>
-    <section class="video wow fadeInUp"  data-wow-delay=".25s" data-wow-duration="2s">
+    <section class="video wow fadeInUp" data-wow-delay=".25s" data-wow-duration="2s">
         <div class="container">
             <div class="title">
                 <h2>Video giới thiệu phần mềm <br><span>checkin Achamcong</span></h2>
@@ -61,13 +60,13 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
                     có
                     thể dể dàng quản lý chấm công, theo dõi chính xác lịch làm việc, đơn từ của nhân sự công ty.</p>
                 <div class="img-video">
-                    <img src="./img/img-video.webp" alt="video-img">
+                    <img class="intro-img-video-auto-post" src="{{ url('img/img-video.webp') }}" alt="video-img">
                 </div>
             </div>
         </div>
 
     </section>
-    <section class="theme-bg feature wow fadeInUp"  data-wow-delay=".25s" data-wow-duration="2s" id="feature">
+    <section class="theme-bg feature wow fadeInUp" data-wow-delay=".25s" data-wow-duration="2s" id="feature">
         <div class="container">
             <div class="animation-circle-inverse"><i></i><i></i><i></i></div>
             <div class="row">
@@ -112,28 +111,28 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
                 <div class="col-md-3 future-mobile how-app-work-slider-wrapper">
                     <ul class="slider">
                         <li>
-                            <img class="img-fluid" src="{{ url('img/app-1.webp') }}" alt="feature-mob">
+                            <img class="img-fluid" src="{{ url('img/app-14.webp') }}" alt="feature-mob">
                         </li>
                         <li>
                             <img class="img-fluid" src="{{ url('img/app-13.webp') }}" alt="feature-mob">
                         </li>
                         <li>
+                            <img class="img-fluid" src="{{ url('img/app-1.webp') }}" alt="feature-mob">
+                        </li>
+                        <li>
                             <img class="img-fluid" src="{{ url('img/app-3.webp') }}" alt="feature-mob">
+                        </li>
+                        <li>
+                            <img class="img-fluid" src="{{ url('img/app-2.webp') }}" alt="feature-mob">
                         </li>
                         <li>
                             <img class="img-fluid" src="{{ url('img/app-4.webp') }}" alt="feature-mob">
                         </li>
                         <li>
-                            <img class="img-fluid" src="{{ url('img/app-5.webp') }}" alt="feature-mob">
+                            <img class="img-fluid" src="{{ url('img/app-12.webp') }}" alt="feature-mob">
                         </li>
                         <li>
-                            <img class="img-fluid" src="{{ url('img/app-6.webp') }}" alt="feature-mob">
-                        </li>
-                        <li>
-                            <img class="img-fluid" src="{{ url('img/app-7.webp') }}" alt="feature-mob">
-                        </li>
-                        <li>
-                            <img class="img-fluid" src="{{ url('img/app-8.webp') }}" alt="feature-mob">
+                            <img class="img-fluid" src="{{ url('img/app-10.webp') }}" alt="feature-mob">
                         </li>
                     </ul>
 
@@ -145,25 +144,25 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
                                 <li class="timeline-right">
                                     <a href="#" data-slide-index="4">
                                         <h4>Chấm công bằng công nghệ AI</h4>
-                                    <p>Chấm công tự động bằng khuôn mặt sử dụng công nghệ AI</p>
+                                        <p>Chấm công tự động bằng khuôn mặt sử dụng công nghệ AI</p>
                                     </a>
                                 </li>
                                 <li class="timeline-right">
                                     <a href="#" data-slide-index="5">
                                         <h4>Thống kê bảng chấm công trong tháng</h4>
-                                    <p>Thống kê, quản lý, theo dõi chính xác </p>
+                                        <p>Thống kê, quản lý, theo dõi chính xác </p>
                                     </a>
                                 </li>
                                 <li class="timeline-right">
                                     <a href="#" data-slide-index="6">
                                         <h4>Tích hợp chấm công bằng Camera</h4>
-                                    <p>Chấm công bằng Camera nhận diện khuôn mặt</p>
+                                        <p>Chấm công bằng Camera nhận diện khuôn mặt</p>
                                     </a>
                                 </li>
                                 <li class="timeline-right">
                                     <a href="#" data-slide-index="7">
                                         <h4>Bảng tin nội bộ</h4>
-                                    <p>Hiện thị bảng tin, Kudobox</p>
+                                        <p>Hiện thị bảng tin, Kudobox</p>
                                     </a>
                                 </li>
                             </ul>
@@ -173,7 +172,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
             </div>
         </div>
     </section>
-    <section class="feature wow fadeInUp"  data-wow-delay=".25s" data-wow-duration="2s">
+    <section class="feature wow fadeInUp" data-wow-delay=".25s" data-wow-duration="2s">
         <div class="container">
             <div class="col-md-8 offset-md-2 text-center">
                 <h2><span>Lý do nên chọn phần mềm </span>check in Achamcong</h2>
@@ -186,21 +185,21 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
             <div class="row">
                 <div class="col-lg-4 text-center pb-4">
                     <div class="process-box">
-                        <img src="{{url('img/svg/text.webp')}}" alt="icon">
+                        <img src="{{ url('img/svg/text.webp') }}" alt="icon">
                         <h3>Chấm công nhanh chóng</h3>
                         <p>Chấm công bằng Camera AI hoặc chấm công trên app Achamcong ở điện thoại nhanh chóng.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center pb-4">
                     <div class="process-box">
-                        <img src="{{url('img/svg/OBJECT.webp')}}" alt="icon">
+                        <img src="{{ url('img/svg/OBJECT.webp') }}" alt="icon">
                         <h3>Tiết kiệm chi phí</h3>
                         <p>Tiết kiệm chi phí nhân sự .Lắp đặt camera 1 lần sử dụng mãi mãi.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center pb-4">
                     <div class="process-box">
-                        <img src="{{url('img/svg/OBJECTS.webp')}}" alt="icon">
+                        <img src="{{ url('img/svg/OBJECTS.webp') }}" alt="icon">
                         <h3>Hỗ trợ 24/7</h3>
                         <p>Achamcong có đội ngũ support khách hàng 24/7. Vì vậy, mọi vấn để sẽ được giải đáp nhanh chóng.
                         </p>
@@ -208,7 +207,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
                 </div>
                 <div class="col-lg-4 text-center pb-4">
                     <div class="process-box">
-                        <img src="{{url('img/svg/text.webp')}}" alt="icon">
+                        <img src="{{ url('img/svg/text.webp') }}" alt="icon">
                         <h3>Quản lý chấm công dễ dàng</h3>
                         <p>Quản lý check in – check out, đi sớm, về muộn, xin nghỉ phép, công tác,… nhanh chóng, chính xác
                         </p>
@@ -216,14 +215,14 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
                 </div>
                 <div class="col-lg-4 text-center pb-4">
                     <div class="process-box">
-                        <img src="{{url('img/svg/OBJECT.webp')}}" alt="icon">
+                        <img src="{{ url('img/svg/OBJECT.webp') }}" alt="icon">
                         <h3>Bảo mật cao</h3>
                         <p>Tích hợp công nghệ AI nhận diện khuôn mặt chính xác, không thể gian lận trong chấm công.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center pb-4">
                     <div class="process-box">
-                        <img src="{{url('img/svg/OBJECTS.webp')}}" alt="icon">
+                        <img src="{{ url('img/svg/OBJECTS.webp') }}" alt="icon">
                         <h3>Update mới nhất</h3>
                         <p>Chúng tôi luôn update cải thiện tính năng mới nhanh và tối ưu nhất.</p>
                     </div>
@@ -231,17 +230,15 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
             </div>
         </div>
     </section>
-    <section class="theme-bg screenshots wow fadeInDown"  data-wow-delay=".25s" data-wow-duration="2s" id="screenshots">
+    <section class="theme-bg screenshots wow fadeInDown" data-wow-delay=".25s" data-wow-duration="2s" id="screenshots">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="swiper-screenshots-container-1 swiper-container">
                         <div class="swiper-wrapper">
-
                             <div class="swiper-slide"><img src="{{ url('img/app-3.webp') }}" alt="3"></div>
                             <div class="swiper-slide"><img src="{{ url('img/app-2.webp') }}" alt="2"></div>
                             <div class="swiper-slide"><img src="{{ url('img/app-1.webp') }}" alt="1"></div>
-
                             <div class="swiper-slide"><img src="{{ url('img/app-4.webp') }}" alt="4"></div>
                             <div class="swiper-slide"><img src="{{ url('img/app-5.webp') }}" alt="5"></div>
                             <div class="swiper-slide"><img src="{{ url('img/app-6.webp') }}" alt="5"></div>
@@ -258,7 +255,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
             </div>
         </div>
     </section>
-    <section class="question wow fadeInDown"  data-wow-delay=".25s" data-wow-duration="2s">
+    <section class="question wow fadeInDown" data-wow-delay=".25s" data-wow-duration="2s">
         <div class="container bg-quest">
             <div class="row pad-quest">
                 <div class="col-lg-6 col-12 text-center">
@@ -283,12 +280,11 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
                         </div>
                         <div class="download">
                             <div class="android">
-                                <a href="https://apps.apple.com/vn/app/a-ch%E1%BA%A5m-c%C3%B4ng/id1532369664?l=vi"><img
+                                <a href="https://play.google.com/store/apps/details?id=com.checkinproject"><img
                                         src="{{ url('img/dowload1.webp') }}" alt="download"></a>
                             </div>
                             <div class="apple">
-                                <a href="https://play.google.com/store/apps/details?id=com.checkinproject"><img
-                                        src="{{ url('img/download2.webp') }}" alt="download"></a>
+                                <a href=""><img src="{{ url('img/download2.webp') }}" alt="download"></a>
                             </div>
                         </div>
                     </div>
@@ -296,7 +292,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
             </div>
         </div>
     </section>
-    <section class="comment wow fadeInDown"  data-wow-delay=".25s" data-wow-duration="2s">
+    <section class="comment wow fadeInDown" data-wow-delay=".25s" data-wow-duration="2s">
         <div class="container">
             <div class="title">
                 <h2>Cảm nhận của khách hàng <br><span>về phần mềm checkin Achamcong</span></h2>
@@ -312,7 +308,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
 
                         <div class="img-phay d-flex flex-row-reverse">
 
-                            <img src="{{url('img/phay.webp')}}" alt="phay">
+                            <img src="{{ url('img/phay.webp') }}" alt="phay">
 
                         </div>
 
@@ -322,7 +318,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
 
                                 <div class="img-comment">
 
-                                    <img src="{{url('img/img-tuananh.webp')}}" alt="avt">
+                                    <img src="{{ url('img/img-tuananh.webp') }}" alt="avt">
 
                                 </div>
 
@@ -357,7 +353,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
 
                         <div class="img-phay d-flex flex-row-reverse">
 
-                            <img src="{{url('img/phay.webp')}}" alt="phay">
+                            <img src="{{ url('img/phay.webp') }}" alt="phay">
 
                         </div>
 
@@ -367,7 +363,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
 
                                 <div class="img-comment">
 
-                                    <img src="{{url('img/img-tuananh.webp')}}" alt="avt">
+                                    <img src="{{ url('img/img-tuananh.webp') }}" alt="avt">
 
                                 </div>
 
@@ -403,7 +399,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
 
                         <div class="img-phay d-flex flex-row-reverse">
 
-                            <img src="{{url('img/phay.webp')}}" alt="phay">
+                            <img src="{{ url('img/phay.webp') }}" alt="phay">
 
                         </div>
 
@@ -413,7 +409,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
 
                                 <div class="img-comment">
 
-                                    <img src="{{url('img/img-tuananh.webp')}}" alt="avt">
+                                    <img src="{{ url('img/img-tuananh.webp') }}" alt="avt">
 
                                 </div>
 
@@ -449,7 +445,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
 
                         <div class="img-phay d-flex flex-row-reverse">
 
-                            <img src="{{url('img/phay.webp')}}" alt="phay">
+                            <img src="{{ url('img/phay.webp') }}" alt="phay">
 
                         </div>
 
@@ -497,7 +493,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
 
         </div>
     </section>
-    <section class="news wow fadeInDown"  data-wow-delay=".25s" data-wow-duration="2s">
+    <section class="news wow fadeInDown" data-wow-delay=".25s" data-wow-duration="2s">
         <div class="container">
             <div class="title">
                 <h2>Tin tức <span>mới nhất</span></h2>
@@ -508,64 +504,67 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
                 <div class="col-lg-4 col-md-6-col-12 margin-bottom">
                     @foreach ($tools as $spin)
                         @if ($spin)
-                    <div class="card-new">
-                        <div class="atv-new img-hover-zoom img-hover-zoom--slowmo atv-new">
-                            <a href="{{ url($spin->post_slug) }}"><img src="{{ $spin->post_thumb ? url($spin->post_thumb) : url('assets/img/default.jpg') }}" alt="demo"></a>
-                        </div>
-                        <div class="box-content">
-                            <div class="title-new">
-                                <p><a href="{{ url($spin->post_slug) }}">{{ $spin->post_title }}</a></p>
-                            </div>
-                            <div class="desc-new">
-                                <a href="{{ url($spin->post_slug) }}">{!! $spin->post_desc !!}</a>
-                            </div>
-                        </div>
-
-                        <div class="more">
-                            <div class="time">
-                                <div class="icon">
-                                    <img src="./img/Time-Circle.webp" alt="icon-time">
+                            <div class="card-new">
+                                <div class="atv-new img-hover-zoom img-hover-zoom--slowmo atv-new">
+                                    <a href="{{ url($spin->post_slug) }}"><img
+                                            src="{{ $spin->post_thumb ? url($spin->post_thumb) : url('assets/img/default.jpg') }}"
+                                            alt="demo"></a>
                                 </div>
-                                <div class="title">
-                                    {{ Carbon::parse($spin->created_at)->locale('vi')->diffForHumans() }}
+                                <div class="box-content">
+                                    <div class="title-new">
+                                        <p><a href="{{ url($spin->post_slug) }}">{{ $spin->post_title }}</a></p>
+                                    </div>
+                                    <div class="desc-new">
+                                        <a href="{{ url($spin->post_slug) }}">{!! $spin->post_desc !!}</a>
+                                    </div>
+                                </div>
+
+                                <div class="more">
+                                    <div class="time">
+                                        <div class="icon">
+                                            <img src="./img/Time-Circle.webp" alt="icon-time">
+                                        </div>
+                                        <div class="title">
+                                            {{ Carbon::parse($spin->created_at)->locale('vi')->diffForHumans() }}
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    @endif
-
-                        @endforeach
+                        @endif
+                    @endforeach
                 </div>
                 <div class="col-lg-8 col-md-12 col-12 d-flex flex-column justify-content-xl-between">
                     @foreach ($posts_all as $new)
-                    <div class="col-lg-12 col-12 margin-bottom">
-                        <div class="card-new-right">
-                            <div class="img-left img-hover-zoom img-hover-zoom--slowmo">
-                                <a href="{{ url($new->post_slug) }}"><img src="{{ $new->post_thumb ? url($new->post_thumb) : url('assets/img/default.jpg') }}" alt="avt"></a>
-                            </div>
-                            <div class="content-right">
-                                <div class="box-content">
-                                    <div class="title">
-                                        <p><a href="{{ url($new->post_slug) }}">{{ $new->post_title }}</a></p>
-                                    </div>
-                                    <div class="desc">
-                                        {!! $new->post_desc !!}
-                                    </div>
-                                    <div class="more">
-                                        <div class="time">
-                                            <div class="icon">
-                                                <img src="./img/Time-Circle.webp" alt="icon-time">
-                                            </div>
-                                            <div class="title">
-                                                {{ Carbon::parse($new->created_at)->locale('vi')->diffForHumans() }}
-                                            </div>
+                        <div class="col-lg-12 col-12 margin-bottom">
+                            <div class="card-new-right">
+                                <div class="img-left img-hover-zoom img-hover-zoom--slowmo">
+                                    <a href="{{ url($new->post_slug) }}"><img
+                                            src="{{ $new->post_thumb ? url($new->post_thumb) : url('assets/img/default.jpg') }}"
+                                            alt="avt"></a>
+                                </div>
+                                <div class="content-right">
+                                    <div class="box-content">
+                                        <div class="title">
+                                            <p><a href="{{ url($new->post_slug) }}">{{ $new->post_title }}</a></p>
                                         </div>
+                                        <div class="desc">
+                                            {!! $new->post_desc !!}
+                                        </div>
+                                        <div class="more">
+                                            <div class="time">
+                                                <div class="icon">
+                                                    <img src="./img/Time-Circle.webp" alt="icon-time">
+                                                </div>
+                                                <div class="title">
+                                                    {{ Carbon::parse($new->created_at)->locale('vi')->diffForHumans() }}
+                                                </div>
+                                            </div>
 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     @endforeach
                 </div>
             </div>
@@ -573,7 +572,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
     </section>
 @endsection
 @section('scripts')
-<script src="{{url('js/jquery.bxslider.min.js')}}"></script>
+    <script src="{{ url('js/jquery.bxslider.min.js') }}"></script>
     <script>
         if ($('.how-app-work-slider-wrapper .slider').length) {
             $('.how-app-work-slider-wrapper .slider').bxSlider({
@@ -581,9 +580,21 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
                 auto: true,
                 controls: false,
                 pause: 5000,
+                autoDelay: 2000,
+                stopAutoOnClick: true,
                 speed: 1000,
                 pagerCustom: '.how-app-work-slider-pager'
             });
         }
+        $('.intro-img-video-auto-post').on('click', function() {
+
+            var videoUrl =
+                'https://www.youtube.com/embed/6Xjc2h7lmq4?autoplay=1" title="Ninja Auto Post - Hướng Dẫn Đăng Bài Lên Group Facebook Hàng Loạt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'; // chỉ định URL của tệp video của bạn và thêm tham số autoplay
+
+            var iframeElement = '<iframe width="485" height="273" src="' + videoUrl + '" allowfullscreen></iframe>';
+
+            $('.intro-img-video-auto-post').replaceWith(iframeElement);
+
+        });
     </script>
 @endsection

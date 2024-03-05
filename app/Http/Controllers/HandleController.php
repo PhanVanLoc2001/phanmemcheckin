@@ -83,7 +83,7 @@ class HandleController extends Controller
     {
         $template = $post->post_templates;
         $category = $post->categories->first();
-        if ($category->cate_slug == "bao-chi") {
+        if ($category &&  $category->cate_slug == "bao-chi") {
             return redirect('/');
         }
         $categories = Category::all();

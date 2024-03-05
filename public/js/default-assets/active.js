@@ -331,3 +331,16 @@ jQuery(document).ready(function ($) {
     });
 
 });
+function showTawkto()
+
+{
+
+$('.confer-btn-white').on('click', function(){
+
+    Tawk_API.showWidget();
+
+    Tawk_API.maximize();
+
+});
+
+}
