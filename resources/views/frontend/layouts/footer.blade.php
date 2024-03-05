@@ -140,7 +140,7 @@
                     <!-- Footer Widget -->
                     <div class="footer-widget">
                         <div class="footer-logo">
-                            <a href="https://phanmemninja.com.vn"><img src="/img/logo-achamcong.webp" alt="logo"></a>
+                            <a href="{{url('')}}"><img src="{{url('img/logo-achamcong.webp')}}" alt="logo"></a>
                         </div>
                         <div class="footer-content">
                             <p>CÔNG TY CP ĐẦU TƯ VÀ CÔNG NGHỆ NINJA.</p>
