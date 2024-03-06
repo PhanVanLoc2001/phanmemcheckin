@@ -11,7 +11,7 @@
     @php
         $currentUrl = request()->url();
     @endphp
-    <link rel="canonical" href="{{ $currentUrl }}" />
+    <link rel="canonical" href="{{$currentUrl}}" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="@yield('meta-title')" />
@@ -51,12 +51,12 @@
             <div class="hotline-phone-ring-circle"></div>
             <div class="hotline-phone-ring-circle-fill"></div>
             <div class="hotline-phone-ring-img-circle"><a
-                    href="tel:@if ($contact) {{ $contact->phone_link }} @endif"
+                    href="tel:@if($contact){{$contact->phone_link}}@endif"
                     aria-label="Number Phone" class="pps-btn-img">
                     <span class="background-call"></span> </a></div>
         </div>
-        <div class="hotline-bar"><a href="@if ($contact) {{ $contact->phone_link }} @endif"
-                aria-label="Số điện thoại: @if ($contact) {{ $contact->phone_number }} @endif"
+        <div class="hotline-bar"><a href="tel:@if($contact){{$contact->phone_link}}@endif"
+                aria-label="Số điện thoại:@if($contact){{$contact->phone_number}}@endif"
                 rel="nofollow">
                 <span class="text-hotline">
                     @if ($contact)

@@ -233,6 +233,12 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
     <section class="theme-bg screenshots wow fadeInDown" data-wow-delay=".25s" data-wow-duration="2s" id="screenshots">
         <div class="container">
             <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="section-title">
+                        <h2 class="text-white" style="text-transform: uppercase;">Ảnh màn hình ứng dụng</h2>
+                        <div class="line white"></div>
+                    </div>
+                </div>
                 <div class="col-sm-12">
                     <div class="swiper-screenshots-container-1 swiper-container">
                         <div class="swiper-wrapper">
@@ -363,7 +369,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
 
                                 <div class="img-comment">
 
-                                    <img src="{{ url('img/img-tuananh.webp') }}" alt="avt">
+                                    <img src="{{ url('img/img-maiphuongjpg.webp') }}" alt="avt">
 
                                 </div>
 
@@ -409,7 +415,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
 
                                 <div class="img-comment">
 
-                                    <img src="{{ url('img/img-tuananh.webp') }}" alt="avt">
+                                    <img src="{{ url('img/img-xuandat.webp') }}" alt="avt">
 
                                 </div>
 
@@ -455,7 +461,7 @@ Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
 
                                 <div class="img-comment">
 
-                                    <img src="img/img-tuananh.webp" alt="avt">
+                                    <img src="img/img-phuonghoa.webp" alt="avt">
 
                                 </div>
 

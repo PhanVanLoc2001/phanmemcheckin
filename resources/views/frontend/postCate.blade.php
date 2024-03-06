@@ -1,12 +1,12 @@
 @extends('frontend.layouts.app')
 @section('title')
-{{ $category->cate_title }}
+{{$category->cate_title}}
 @endsection
 @section('meta-desc')
-{{ $category->cate_seodesc }}
+{{$category->cate_seodesc}}
 @endsection
 @section('meta-title')
-{{ $category->cate_title }}
+{{$category->cate_title}}
 @endsection
 @section('content')
     @php
