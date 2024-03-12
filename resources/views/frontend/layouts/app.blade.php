@@ -8,10 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>@yield('title')</title>
     <meta name="description" content="@yield('meta-desc')" />
+    @php
+        $currentUrl = request()->url();
+    @endphp
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="@yield('meta-title')" />
     <meta property="og:description" content="@yield('meta-desc')" />
+    <meta property="og:url" content="{{ $currentUrl }}" />
     <meta name="robots" content="max-image-preview:large,noarchive,noodp,index,follow">
     <meta property="og:site_name" content="Phần mềm chấm công công nghệ AI, quản lý nhân sự với công nghệ hiện đại, chi phí tối giản" />
     <meta name="twitter:card" content="summary_large_image">
