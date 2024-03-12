@@ -1,13 +1,8 @@
 @extends('frontend.layouts.app')
-@section('title')
-{{$category->cate_title}}
-@endsection
-@section('meta-desc')
-{{$category->cate_seodesc}}
-@endsection
-@section('meta-title')
-{{$category->cate_title}}
-@endsection
+@section('title'){{$category->cate_title}}@endsection
+@section('meta-desc'){{$category->cate_desc}}@endsection
+@section('meta-title'){{$category->cate_title}}@endsection
+@section('meta-image'){{ $category->cate_thumb ? url($category->cate_thumb) : url('assets/img/default.jpg') }}@endsection
 @section('content')
     @php
         use Carbon\Carbon;
@@ -36,7 +31,7 @@
         <section class="blog-page">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-md-7 col-12">
+                    <div class="col-lg-8 col-12">
                         @if ($news->isEmpty())
                             <p>No articles found.</p>
                         @else
@@ -72,7 +67,7 @@
                             {{ $news->onEachSide(2)->withQueryString()->links() }}
                         </div>
                     </div>
-                    <div class="col-lg-4 col-lg-3 list-sidebar">
+                    <div class="col-lg-4 list-sidebar">
                         @include('frontend.layouts.sidebar-news')
                     </div>
                 </div>

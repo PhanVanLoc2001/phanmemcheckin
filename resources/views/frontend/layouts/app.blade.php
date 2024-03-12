@@ -8,19 +8,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>@yield('title')</title>
     <meta name="description" content="@yield('meta-desc')" />
-    @php
-        $currentUrl = request()->url();
-    @endphp
-    <link rel="canonical" href="{{$currentUrl}}" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="@yield('meta-title')" />
     <meta property="og:description" content="@yield('meta-desc')" />
     <meta property="og:url" content="{{ $currentUrl }}" />
     <meta name="robots" content="max-image-preview:large,noarchive,noodp,index,follow">
-    <meta property="og:site_name"
-        content="Phần mềm chấm công công nghệ AI, quản lý nhân sự với công nghệ hiện đại, chi phí tối giản" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:site_name" content="Phần mềm chấm công công nghệ AI, quản lý nhân sự với công nghệ hiện đại, chi phí tối giản" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="congcumarketing.net">
+    <meta property="twitter:url" content="{{ $currentUrl }}">
+    <meta name="twitter:title" content="@yield('meta-title')">
+    <meta name="twitter:description" content="@yield('meta-desc')">
+    <meta name="twitter:image" content="@yield('meta-image')">
     <link rel="icon" href="{{ url('img/favicon.webp') }}">
     @include('frontend.layouts.style')
     {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> --}}

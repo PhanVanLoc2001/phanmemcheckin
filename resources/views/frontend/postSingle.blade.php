@@ -1,13 +1,8 @@
 @extends('frontend.layouts.app')
-@section('title')
-{{ $post->post_title }}
-@endsection
-@section('meta-desc')
-{{ $post->post_seodesc }}
-@endsection
-@section('meta-title')
-{{ $post->post_title }}
-@endsection
+@section('title'){{ $post->post_title }}@endsection
+@section('meta-desc'){{ $post->post_seodesc }}@endsection
+@section('meta-title'){{ $post->post_title }}@endsection
+@section('meta-image'){{ $post->post_thumb ? url($post->post_thumb) : url('assets/img/default.jpg') }} @endsection
 @section('schema')
     <script type="application/ld+json">
 {
@@ -73,7 +68,7 @@
           <div class="container">
             <div class="row">
               <!-- blog details starts-->
-              <div class="col-sm-12 col-md-8 col-lg-9">
+              <div class="col-lg-8 col-12">
                 <div class="blog-details">
                   <div class="news-text">
 
@@ -87,7 +82,7 @@
                             <div class="image"
                                 style="flex-shrink: 0;margin-right: 10px;max-width: 200px;max-height: 200px; ">
                                 <a href="{{ $postItem->post_slug }}" target="_blank"><img
-                                        src="{{ $postItem->post_thumb ? url($postItem->post_thumb) : url('/assets/img/default.jpg') }}"
+                                        src="{{ $postItem->post_thumb ? url($postItem->post_thumb) : url('assets/img/default.jpg') }}"
                                         alt="{{ $postItem->post_title }}"
                                         style="width: 100%;height: 100%;object-fit: cover;"></a>
                             </div>
@@ -106,7 +101,7 @@
               </div>
               <!-- blog details end-->
               <!--Blog sidebar  -->
-              <div class="col-md-4 col-lg-3 order-md-last list-sidebar">
+              <div class="col-lg-4 col-12 order-md-last list-sidebar">
                 @include('frontend.layouts.sidebar-news')
               </div>
               <!--Blog sidebar Ends-->

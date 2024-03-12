@@ -26,24 +26,24 @@
                         <h2 class="footer-title">Điều khoản chính sách</h2>
                         <ul>
                             <li>
-                                <a href="https://www.phanmemninja.com/chinh-sach-bao-mat-thong-tin">
+                                <a href="https://www.phanmemninja.com/chinh-sach-bao-mat-thong-tin" rel="nofollow">
                                     Chính sách bảo mật
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.phanmemninja.com/chinh-sach-dieu-khoan-khi-su-dung-phan-mem-ninja">
+                                <a href="https://www.phanmemninja.com/chinh-sach-dieu-khoan-khi-su-dung-phan-mem-ninja" rel="nofollow">
                                     Điều khoản sử dụng
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.phanmemninja.com/chinh-sach-cai-dat-phan-mem">
+                                <a href="https://www.phanmemninja.com/chinh-sach-cai-dat-phan-mem" rel="nofollow">
 
                                     Chính sách cài đặt phần mềm
 
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.phanmemninja.com/huong-dan-mua-hang-phan-mem-ninja-team">
+                                <a href="https://www.phanmemninja.com/huong-dan-mua-hang-phan-mem-ninja-team" rel="nofollow">
                                     Hướng dẫn thanh toán
                                 </a>
                             </li>
@@ -83,7 +83,6 @@
         </div>
     </div>
     <!-- /Footer Top -->
-
     <!-- Footer Bottom -->
     <div class="footer-bottom">
         <div class="container">

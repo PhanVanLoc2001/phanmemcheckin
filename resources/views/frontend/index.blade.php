@@ -1,21 +1,15 @@
 @extends('frontend.layouts.app')
-@section('title')
-Phần mềm chấm công công nghệ AI, quản lý nhân sự với công nghệ hiện đại, chi phí tối giản
-@endsection
-@section('meta-desc')
-Phần mềm Ninja cung cấp giải pháp Marketing đa kênh hiệu quả: Phần mềm quảng cáo Facebook; phần mềm quảng cáo zalo, phần mềm quảng cáo Tiktok, phần mềm quảng cáo Telegram...
-@endsection
-@section('meta-title')
-Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa
-@endsection
+@section('title')Phần mềm chấm công công nghệ AI, quản lý nhân sự với công nghệ hiện đại, chi phí tối giản @endsection
+@section('meta-desc')Phần mềm Ninja cung cấp giải pháp Marketing đa kênh hiệu quả: Phần mềm quảng cáo Facebook; phần mềm quảng cáo zalo, phần mềm quảng cáo Tiktok, phần mềm quảng cáo Telegram... @endsection
+@section('meta-title')Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa @endsection
+@section('meta-image'){{url('img/page-image.webp')}} @endsection
 @section('schema')
     <script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "WebPage",
-  "name": "Phần mềm Ninja - Giải Pháp Marketing Đa Kênh Tự Động Hóa",
-  "description": "Phần mềm Ninja cung cấp giải pháp Marketing đa kênh hiệu quả: Phần mềm quảng cáo Facebook; phần mềm quảng cáo zalo, phần
-  mềm quảng cáo Tiktok, phần mềm quảng cáo Telegram...",
+  "name": "Phần mềm chấm công công nghệ AI, quản lý nhân sự với công nghệ hiện đại, chi phí tối giản",
+  "description": "Phần mềm Ninja cung cấp giải pháp Marketing đa kênh hiệu quả: Phần mềm quảng cáo Facebook; phần mềm quảng cáo zalo, phần mềm quảng cáo Tiktok, phần mềm quảng cáo Telegram...",
   "url": "{{url('/')}}",
   "publisher": {
     "@type": "Organization",
